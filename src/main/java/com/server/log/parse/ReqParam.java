@@ -56,6 +56,19 @@ public class ReqParam {
 	public String toString() {
 		return "ReqParam [id=" + id + ", url=" + url + ", header=" + header + ", req=" + req + ", resp=" + resp + "]";
 	}
+
+	public ReqParam(String url, String header, String req, String resp) {
+		super();
+		this.url = url;
+		this.header = header;
+		this.req = req;
+		this.resp = resp;
+	}
+
+	public ReqParam() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 	

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.server.log.dao.OnlineLogMapper">
+  <!-- 	public int add(ReqParam req); -->
+  
+  <update id="add" parameterType="com.server.log.parse.ReqParam">
+  		insert into online_log(url,header,req,resp) values(#{url},#{header},#{req},{resp})
+  </update>
+  
+</mapper>
